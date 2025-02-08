@@ -1,0 +1,22 @@
+<!-- views/createUser.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <a href="/">Go Back</a>
+    <br />
+    <br />
+    <% if (!locals.user) {%>
+      <h1>Not Logged in</h1>
+    <% } else {%>
+      <form action="/post-message" method="POST">
+        <label for="title">Title</label>
+        <input id="title" name="title" placeholder="title" type="text" />
+        <label for="body">Body</label>
+        <input id="body" name="body" placeholder="body" type="text" />
+        <button type="submit">Post Message</button>
+      </form>
+    <%}%>
+  </body>
+</html>

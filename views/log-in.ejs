@@ -1,0 +1,24 @@
+<!-- views/createUser.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+<body>
+  <h1>Please log in:</h1>
+  <form action="/log-in" method="POST">
+    <label for="username">Username</label>
+    <input id="username" name="username" placeholder="username" value="tada" type="text" />
+    <label for="password">Password</label>
+    <input id="password" name="password" placeholder="password"  value="Kirat2008" type="text" />
+    <br />
+    <br />
+    <button type="submit">Log In</button>
+  </form>
+  <a href="/sign-up">
+    <button>Don't have an accont? Sign Up</button>
+  </a>
+  <a href="/">
+    <button>Continue as Guest</button>
+  </a>
+</body>
+</html>
